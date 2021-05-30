@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DictApp</string>
+    <string name="word_name">Word Name</string>
+    <string name="word_description">Word Description</string>
+    <string name="lire_audio">Lire Audio</string>
+    <string name="lire_video">Lire Video</string>
+</resources>

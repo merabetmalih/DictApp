@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/detail_name_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/word_name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/details_word_name"
+            android:layout_marginLeft="6dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:id="@+id/detail_word_layout_description"
+       app:layout_constraintTop_toBottomOf="@id/detail_name_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/word_description"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/details_word_description"
+            android:layout_marginLeft="6dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/detail_word_image"
+        app:layout_constraintTop_toBottomOf="@id/detail_word_layout_description"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/detail_audio_start"
+        app:layout_constraintTop_toBottomOf="@id/detail_word_image"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/lire_audio"
+            android:id="@+id/detail_audio_start_btn"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_volume_up_24" />
+    </LinearLayout>
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/detail_video"
+        app:layout_constraintTop_toBottomOf="@id/detail_audio_start"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/detail_video_btn"
+        app:layout_constraintTop_toBottomOf="@id/detail_video"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/lire_video"
+            android:id="@+id/detail_video_start_btn"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_volume_up_24" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
